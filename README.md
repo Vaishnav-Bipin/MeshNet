@@ -73,3 +73,24 @@ if you find our work useful in your research, please consider citing:
 ### Licence
 
 Our code is released under MIT License (see LICENSE file for details).
+
+
+### Custom (Vaishnav)
+```
+. anaconda3/bin/activate
+conda create --name pytorch3d --file conda_reqs.txt
+pip install -r pip_reqs.txt
+
+mkdir dataset
+mkdir dataset/GrabCad67
+mkdir dataset/GrabCad34
+mkdir dataset/GrabCad67L
+mkdir dataset/GrabCad34L
+
+# use createStructure.py in GCad33 to populate datasets (dirs, makeobjs, smpobjs, check)
+
+# update config/train_config_gcad33.yaml
+# python train_gcad.py
+# update config/test_config_gcad33.yaml
+# python test_gcad.py
+```
