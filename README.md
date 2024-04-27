@@ -78,7 +78,7 @@ Our code is released under MIT License (see LICENSE file for details).
 ### Custom (Vaishnav)
 ```
 . anaconda3/bin/activate
-conda create --name pytorch3d --file conda_reqs.txt
+conda create --name pytorch3d --file conda_reqs.txt   # make python 3.9.19
 pip install -r pip_reqs.txt
 
 mkdir dataset
