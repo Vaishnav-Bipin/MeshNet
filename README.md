@@ -87,6 +87,7 @@ mkdir dataset/GrabCad34
 mkdir dataset/GrabCad67L
 mkdir dataset/GrabCad34L
 
+# ensure STL_files_33K populated in base GCad33
 # use createStructure.py in GCad33 to populate datasets (dirs, makeobjs, smpobjs, check)
 
 # update config/train_config_gcad33.yaml
