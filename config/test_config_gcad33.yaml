@@ -1,0 +1,27 @@
+# CUDA
+cuda_devices: '2'
+
+# dataset
+dataset:
+  data_root: 'dataset/GrabCad67_processed'
+  augment_data: false
+  max_faces: 500
+
+# model
+load_model: 'ckpt_root_67_old_1/MeshNet_best.pkl'
+vers: '67'
+
+# MeshNet
+MeshNet:
+  structural_descriptor:
+    num_kernel: 64
+    sigma: 0.2
+  mesh_convolution:
+    aggregation_method: 'Concat'  # Concat/Max/Average
+  mask_ratio: 0.95
+  dropout: 0.5
+  num_classes: 33
+
+# test config
+batch_size: 32
+retrieval_on: false
